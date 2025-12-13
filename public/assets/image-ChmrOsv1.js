@@ -1,0 +1,1 @@
+import{r,j as c,l as i,o as m}from"./index-DdlObs6W.js";const n=r.forwardRef(function(a,s){const{align:e,fit:t="cover",...o}=a;return c.jsx(i.img,{ref:s,objectFit:t,objectPosition:e,className:m("chakra-image",a.className),...o})});n.displayName="Image";export{n as I};
