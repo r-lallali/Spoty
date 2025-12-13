@@ -1,0 +1,1 @@
+const f=e=>e.charAt(0).toUpperCase()+e.slice(1);function i(e){const n=new Date(e),r=new Date().getTime()-n.getTime(),o=Math.floor(r/6e4),t=Math.floor(r/36e5);if(o<60)return`Il y a ${o} minute${o>1?"s":""}`;if(t<24)return`Il y a ${t} heure${t>1?"s":""}`;{const s=Math.floor(t/24);return`Il y a ${s} jour${s>1?"s":""}`}}export{i as a,f};
