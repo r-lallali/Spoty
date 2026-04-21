@@ -33,6 +33,10 @@ export const Route = createFileRoute("/dashboard")({
   ),
   staleTime: Infinity,
   loader: async () => {
+    if (!localStorage.getItem("access_token")) {
+      throw redirect({ to: "/" });
+    }
+
     try {
       const user = await getUserProfile();
       return { user };
